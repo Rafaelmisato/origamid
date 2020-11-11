@@ -1,5 +1,17 @@
 <?php
 
+  // Funções para Limpar o Header
+  remove_action('wp_head', 'rsd_link');
+  remove_action('wp_head', 'wlwmanifest_link');
+  remove_action('wp_head', 'start_post_rel_link', 10, 0 );
+  remove_action('wp_head', 'adjacent_posts_rel_link_wp_head', 10, 0);
+  remove_action('wp_head', 'feed_links_extra', 3 );
+  remove_action('wp_head', 'wp_generator' );
+
+  // Habilitar Menus
+  add_theme_support('menus');
+
+  /**FIELDS CMB2 WP**/
   function get_field($key, $page_id = 0) {
     $id = $page_id !== 0 ? $page_id : get_the_ID();
   
@@ -8,6 +20,31 @@
 
   function the_field($key, $page_id = 0) {
     echo get_field($key, $page_id);
+  }
+
+  //fields SEO
+  add_action('cmb2_admin_init', 'cmb2_fields_seo');
+  function cmb2_fields_seo() {
+    $cmb = new_cmb2_box([
+      'id' => 'seo',
+      'title' => 'SEO',
+      'object_types' => ['page'],
+      'show_on' => [
+        'key' => 'page-template',
+        'value' => ['page-home.php', 'page-contato.php', 'page-sobre.php']
+      ],
+    ]);
+
+    $seo = $cmb->add_field([
+      'name' => 'Titulo SEO',
+      'id' => 'title_seo',
+      'type' => 'text'
+    ]);
+    $seo = $cmb->add_field([
+      'name' => 'Descrição SEO',
+      'id' => 'description_seo',
+      'type' => 'text'
+    ]);
   }
 
   // fields page menu da semana
