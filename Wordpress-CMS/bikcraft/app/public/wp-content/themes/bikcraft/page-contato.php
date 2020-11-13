@@ -3,8 +3,9 @@
 get_header();
 ?>
 
-<?php if ( have_posts() ) : while ( have_posts() ) : the_post(); ?>
-<?php include(TEMPLATEPATH . "/inc/intro.php"); ?>
+<?php if (have_posts()) : while (have_posts()) : the_post(); ?>
+
+<?php include(TEMPLATEPATH . "/includes/intro.php"); ?>
 
 <section class="contato container animar-interno">
 	<form action="enviar.php" method="post" name="form" class="formphp contato_form grid-8">
@@ -34,9 +35,9 @@ get_header();
 		<span>Rio de Janeiro - RJ - Brasil</span>
 		<h3>Redes Sociais</h3>
 		<ul>
-			<li><a href="http://facebook.com" target="_blank"><img src="img/redes-sociais/facebook.png" alt="Facebook Bikcraft"></a></li>
-			<li><a href="http://instagram.com" target="_blank"><img src="img/redes-sociais/instagram.png" alt="Instagram Bikcraft"></a></li>
-			<li><a href="http://twitter.com" target="_blank"><img src="img/redes-sociais/twitter.png" alt="Twitter Bikcraft"></a></li>
+			<li><a href="http://facebook.com" target="_blank"><img src="<?php echo get_stylesheet_directory_uri(); ?>/img/redes-sociais/facebook.png" alt="Facebook Bikcraft"></a></li>
+			<li><a href="http://instagram.com" target="_blank"><img src="<?php echo get_stylesheet_directory_uri(); ?>/img/redes-sociais/instagram.png" alt="Instagram Bikcraft"></a></li>
+			<li><a href="http://twitter.com" target="_blank"><img src="<?php echo get_stylesheet_directory_uri(); ?>/img/redes-sociais/twitter.png" alt="Twitter Bikcraft"></a></li>
 		</ul>
 	</div>
 </section>
