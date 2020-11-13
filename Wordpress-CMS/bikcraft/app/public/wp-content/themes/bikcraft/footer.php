@@ -1,8 +1,8 @@
 <div class="quebra">
-	<blockquote class="quote-externo container">
-		<p>“o verdadeiro segredo da felicidade está em ter um genuíno interesse por todos os detalhes da vida cotidiana.”</p>
-		<cite>WILLIAM MORRIS</cite>
-	</blockquote>
+  <blockquote class="quote-externo container">
+    <p>“o verdadeiro segredo da felicidade está em ter um genuíno interesse por todos os detalhes da vida cotidiana.”</p>
+    <cite>WILLIAM MORRIS</cite>
+  </blockquote>
 </div>
 
 <footer>
@@ -26,9 +26,9 @@
       <div class="grid-4 footer_redes">
         <h3>Contato</h3>
         <ul>
-          <li><a href="http://facebook.com" target="_blank"><img src="img/redes-sociais/facebook.png" alt="Facebook Bikcraft"></a></li>
-          <li><a href="http://instagram.com" target="_blank"><img src="img/redes-sociais/instagram.png" alt="Instagram Bikcraft"></a></li>
-          <li><a href="http://twitter.com" target="_blank"><img src="img/redes-sociais/twitter.png" alt="Twitter Bikcraft"></a></li>
+          <li><a href="http://facebook.com" target="_blank"><img src="<?php echo get_stylesheet_directory_uri(); ?>/img/redes-sociais/facebook.png" alt="Facebook Bikcraft"></a></li>
+          <li><a href="http://instagram.com" target="_blank"><img src="<?php echo get_stylesheet_directory_uri(); ?>/img/redes-sociais/instagram.png" alt="Instagram Bikcraft"></a></li>
+          <li><a href="http://twitter.com" target="_blank"><img src="<?php echo get_stylesheet_directory_uri(); ?>/img/redes-sociais/twitter.png" alt="Twitter Bikcraft"></a></li>
         </ul>
       </div>
 

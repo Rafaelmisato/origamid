@@ -1,20 +1,19 @@
 /*
-Theme Name: Bikecraft
-Theme URI: http://bikecraft.com
+Theme Name: Bikcraft
+Theme URI: http://bikcraft.com
 Author: Rafael Misato
-Author URI: http://rafaelmisato.com/
-Description: theme created for ecommerce, bikecraft
+Author URI: http://rafaelmisato.github.io/portfolio
+Description: Tema criado para a Bikcraft
 Version: 1.0
 */
 
-@import 'css/contato.css';
-@import 'css/grid.css';
-@import 'css/normalize.css';
-@import 'css/portfolio.css';
-@import 'css/produtos.css';
 @import 'css/reset.css';
-@import 'css/responsivo.css';
+@import 'css/normalize.css';
+@import 'css/grid.css';
 @import 'css/sobre.css';
+@import 'css/produtos.css';
+@import 'css/portfolio.css';
+@import 'css/contato.css';
 
 /* Estilos Gerais */
 
@@ -313,7 +312,7 @@ img {
 	width: 634px;
 	height: 83px;
 	display: block;
-	background: url("../img/linhas.png") no-repeat center;
+	background: url("./img/linhas.png") no-repeat center;
 	position: absolute;
 	top: 209px;
 	right: 162px;
@@ -357,7 +356,7 @@ img {
 .quebra {
 	width: 100%;
 	height: 220px;
-	background: url("../img/bg-footer.jpg") no-repeat center;
+	background: url("./img/bg-footer.jpg") no-repeat center;
 	background-size: cover;
 	text-align: center;
 	padding-top: 40px;
